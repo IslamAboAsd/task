@@ -5,15 +5,15 @@ var myApp = angular.module('myApp', [
 ]);
 myApp.config(['$routeProvider', function ($routeProvider) {
         $routeProvider
-                .when('/item1', {
+                .when('/item', {
                     templateUrl: 'partail/item1.html',
                     controller: 'ListController'
                 })
-                .when('/item2', {
+                .when('/items', {
                     templateUrl: 'partail/item2.html',
                     controller: 'DetailsController'
                 })
                         .otherwise({
-                            redirectTo:'item1'
+                            redirectTo:'item'
                         });
     }]);
