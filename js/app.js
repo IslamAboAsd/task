@@ -14,6 +14,6 @@ myApp.config(['$routeProvider', function ($routeProvider) {
                     controller: 'DetailsController'
                 })
                         .otherwise({
-                            redirectTo:'item2'
+                            redirectTo:'item1'
                         });
     }]);
