@@ -1,8 +1,4 @@
-node_modules
-dist
-.tmp
-.sass-cache
-.idea
+coverage
 bower_components
-config.json
-app/scripts/config.js
+node_modules
+.idea
