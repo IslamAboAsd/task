@@ -26,7 +26,8 @@
         <div class="brand">
             <a href="#"><span class="" >l</span>ogo</a>
         </div>
-        <div class="data"><div  ng-controller="datCtrl">
+        <div class="data">
+            <div  ng-controller="datCtrll">
 
             <p>Date = {{ today | date}}</p>
             
@@ -34,7 +35,7 @@
             
             <script>
             var app = angular.module('myApp', []);
-            app.controller('datCtrl', function($scope) {
+            app.controller('datCtrll', function($scope) {
                 $scope.today = new Date();
             });
             </script>
