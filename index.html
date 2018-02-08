@@ -26,19 +26,10 @@
         <div class="brand">
             <a href="#"><span class="" >l</span>ogo</a>
         </div>
-        <div class="data">
-            <div  ng-controller="datCtrll">
+            <div  ng-controller="datCtrl">
 
-            <p>Date = {{ today | date}}</p>
+            <p>Date = {{ today | date}}</p>          
             
-            </div>
-            
-            <script>
-            var app = angular.module('myApp', []);
-            app.controller('datCtrll', function($scope) {
-                $scope.today = new Date();
-            });
-            </script>
             </div>
         <div class="profile">
             <div class="dropdown">

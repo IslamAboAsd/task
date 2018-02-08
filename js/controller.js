@@ -5,3 +5,6 @@ personController.controller("londonCtrl", function ($scope) {
 personController.controller("parisCtrl", function ($scope) {
     $scope.msg = "I love Paris";
 });
+personController.controller('datCtrl', function($scope) {
+    $scope.today = new Date();
+});
