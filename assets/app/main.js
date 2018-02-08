@@ -16,7 +16,7 @@ Demo.config(
 			.when(
 				"/home",
 				{
-					action: "splash.home"
+					action: "standard.pets.categories"
 				}
 			)
 			.when(
