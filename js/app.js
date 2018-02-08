@@ -2,14 +2,14 @@ var myApp = angular.module("myApp", ["ngRoute", "personController"]);
 myApp.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "../partail/main.htm",
+        templateUrl : "partail/main.html",
     })
     .when("/london", {
-        templateUrl : "../partail/london.htm",
+        templateUrl : "partail/london.html",
         controller : "londonCtrl"
     })
     .when("/paris", {
-        templateUrl : "../partail/paris.htm",
+        templateUrl : "partail/paris.html",
         controller : "parisCtrl"
     })
     .otherwise({
