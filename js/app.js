@@ -1,5 +1,5 @@
-var app = angular.module("myApp", ["ngRoute"]);
-app.config(function($routeProvider) {
+var myApp = angular.module("myApp", ["ngRoute", "personController"]);
+myApp.config(function($routeProvider) {
     $routeProvider
     .when("/", {
         templateUrl : "partail/main.htm",
@@ -11,5 +11,8 @@ app.config(function($routeProvider) {
     .when("/paris", {
         templateUrl : "partail/paris.htm",
         controller : "parisCtrl"
+    })
+    .otherwise({
+        redirectTo:"/"
     });
 });
