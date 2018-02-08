@@ -7,11 +7,11 @@ myApp.config(['$routeProvider', function ($routeProvider) {
         $routeProvider
                 .when('/item1', {
                     templateUrl: 'partail/item1.html',
-                    controller: 'DetailsController'
+                    controller: 'ListController'
                 })
                 .when('/item2', {
                     templateUrl: 'partail/item2.html',
-                    controller: 'ListController'
+                    controller: 'DetailsController'
                 })
                         .otherwise({
                             redirectTo:'item1'
