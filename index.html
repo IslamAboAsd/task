@@ -5,7 +5,7 @@
         <title>ng-view</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Harmattan" rel="stylesheet">
@@ -21,7 +21,7 @@
 
 
     <body ng-app="myApp">
-    <nav class="navbar navbar-fixed-top">
+    <nav class="myNav navbar navbar-fixed-top">
      <div class="container-fluid">
          <div class="row">
         <div class="col-sm-4 brand">
@@ -29,17 +29,18 @@
         </div>
             <div class="col-sm-4" ng-controller="datCtrl">
 
-            <p>Date = {{ today | date}}</p>          
+            <p> {{ today | date : " d MMM y"}}</p>          
             
             </div>
         <div class="profile col-sm-4">
             <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> <span class="caret"></span> Ahmed Mohamed Adel
                </button>
-                <ul class="dropdown-menu">
-                  <li><a href="#!london">HTML</a></li>
-                  <li><a href="#">CSS</a></li>
-                  <li><a href="#">JavaScript</a></li>
+               <img class="img-circle img-thumbnail" width="42" height="42" src="http://via.placeholder.com/42x42" alt="" title="">
+
+               <ul class="dropdown-menu">
+                  <li><a href="#">profile</a></li>
+                  <li><a href="#">Log out</a></li>
                 </ul>
               </div>
         </div>
@@ -47,25 +48,24 @@
     </div>
 
  </nav>
-     <aside class="fixed">
+     <aside class="fix" ng-app="myApp">
             <ul class="nav nav-pills nav-stacked">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Menu 1</a></li>
-                    <li><a href="#">Menu 2</a></li>
-                    <li><a href="#">Menu 3</a></li>
-                  </ul>
+                    <li class="active"><a href="#!main">Dashboard</a></li>
+                    <li><a href="#!addEmployee">profile</a></li>
+                </ul>
 
      </aside> 
         
-        <div ng-view></div>
+        <div class="veiw" ng-view></div>
 
 
 <div class="clearfix"></div>
-<footer><h3 class="text-center">2018</h3></footer>
+<footer class="text-center" ng-controller="datCtrl">            <p> {{ today | date : "y"}}</p>          
+</footer>
 
 
-        <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
-       <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="js/html5shiv.min.js" type="text/javascript"></script>
         <script src="js/app.js" type="text/javascript"></script>
         <script src="js/controller.js" type="text/javascript"></script>

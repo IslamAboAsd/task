@@ -2,12 +2,44 @@
 $right:right;
 $left:left;
 $maincolor:#DDD;
-$navhieght:70px;
+$navhieght:50px;
+.row{
+    margin-bottom: 15px;
+}
+.modal-content{
+    box-shadow: none;
+    float: left;
+    width: 33.33333%;
+    margin: 25px;
+    transition: all ease-in-out 2s
+}
+.myNav{
+    border-bottom: 1px solid #fafafa;
+    height: $navhieght;
+    padding:7px;
+
 .profile{
     float: $right;
     color: $maincolor
 }
-.fixed{
+}
+.fix{
     position: fixed;
-    top: $navhieght
+    top: $navhieght;
+    width: 15%;
+    height: 100%;
+    border: 1px solid #ddd;
+}
+
+.veiw{
+    margin-top: $navhieght + 25;
+    margin-left: 15%
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff
 }

@@ -1,18 +1,17 @@
 var myApp = angular.module("myApp", ["ngRoute", "personController"]);
 myApp.config(function($routeProvider) {
     $routeProvider
-    .when("/", {
+    .when("/main", {
         templateUrl : "partail/main.html",
+        controller : "mainCtrl"
+
     })
-    .when("/london", {
-        templateUrl : "partail/london.html",
-        controller : "londonCtrl"
+    .when("/addEmployee", {
+        templateUrl : "partail/addEmployee.html",
+        controller : "addEmployeeCtrl"
     })
-    .when("/paris", {
-        templateUrl : "partail/paris.html",
-        controller : "parisCtrl"
-    })
+    
     .otherwise({
-        redirectTo:"/"
+        redirectTo:"/addEmployee"
     });
 });
