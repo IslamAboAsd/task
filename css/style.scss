@@ -2,8 +2,12 @@
 $right:right;
 $left:left;
 $maincolor:#DDD;
-
+$navhieght:70px;
 .profile{
     float: $right;
     color: $maincolor
+}
+.fixed{
+    position: fixed;
+    top: $navhieght
 }
