@@ -1,5 +1,5 @@
-var myApp = angular.module("myApp", ["ngRoute", "personController"]);
-myApp.config(function($routeProvider) {
+var app = angular.module("app", ["ngRoute", "personController"]);
+app.config(function($routeProvider) {
     $routeProvider
     .when("/main", {
         templateUrl : "partail/main.html",

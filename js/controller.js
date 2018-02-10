@@ -1,35 +1,46 @@
-var personController=angular.module("personController", []);
+var personController=angular.module("personController", ["ngRoute","720kb.datepicker", "personController"]);
 
 
-personController.controller("mainCtrl", function ($scope) {
-    $scope.main = "I love Paris";
-});
 personController.controller('datCtrl', function($scope) {
     $scope.today = new Date();
 });
 
 personController.controller("addEmployeeCtrl", function($scope) {
     $scope.companies = [
-                        { 'name':'Infosys Technologies',
-                            'employees': 125000,
-                            'headoffice': 'Bangalore'},
-                            { 'name':'Cognizant Technologies',
-                                'employees': 100000,
-                                'headoffice': 'Bangalore'},
-                                { 'name':'Wipro',
-                                    'employees': 115000,
-                                    'headoffice': 'Bangalore'},
-                                    { 'name':'Tata Consultancy Services (TCS)',
-                                        'employees': 150000,
-                                        'headoffice': 'Bangalore'},
-                                        { 'name':'HCL Technologies',
-                                            'employees': 90000,
-                                            'headoffice': 'Noida'},
+                        { 'employeeName':'Ahmed',
+                            'employeeCode': 125000,
+                            'department': 'PHP Devlopment',
+                            'birthDay':'1985-06-13',
+                             'gender':'male'},
+                            { 'employeeName':'Mohamed',
+                                'employeeCode': 100000,
+                                'department': 'Graphic',
+                                'birthDay':'1992-02-01',
+                                'gender':'male'},
+                                { 'employeeName':'Ali',
+                                    'employeeCode': 115000,
+                                    'department': 'Mangment',
+                                    'birthDay':'1989-08-13',
+                                    'gender':'male'},
+                                    { 'employeeName':'Hossam',
+                                        'employeeCode': 150000,
+                                        'department': 'Graphic',
+                                        'birthDay':'1995-03-13',
+                                        'gender':'male'},
+                                        { 'employeeName':'Hisham',
+                                            'employeeCode': 90000,
+                                            'department': 'UI Devlopment',
+                                            'birthDay':'1991-06-13',
+                                            'gender':'male'},
                         ];
     $scope.addRow = function(){		
-        $scope.companies.push({ 'name':$scope.name, 'employees': $scope.employees, 'headoffice':$scope.headoffice });
-        $scope.name='';
-        $scope.employees='';
-        $scope.headoffice='';
+        $scope.companies.push({ 'employeeName':$scope.employeeName, 'employeeCode': $scope.employeeCode, 'department':$scope.department, 'birthDay':$scope.birthDay, 'gender':$scope.gender });
+        $scope.employeeName='';
+        $scope.employeeCode='';
+        $scope.department='';
+        $scope.birthDay='';
+        $scope.gender='';
     };
+    
 });
+

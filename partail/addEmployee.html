@@ -1,25 +1,47 @@
-<form class="form-horizontal" role="form" ng-submit="addRow()">
-        <div class="form-group">
-            <label class="col-md-2 control-label">Name</label>
-            <div class="col-md-4">
+<form class="" role="form" ng-submit="addRow()">
+    <div class="row">
+    <div class="form-group col-sm-3">
+            <label class="control-label">Employee Name</label>
                 <input type="text" class="form-control" name="name"
-                    ng-model="name" />
-            </div>
+                    ng-model="employeeName" />
         </div>
-        <div class="form-group">
-            <label class="col-md-2 control-label">Employees</label>
-            <div class="col-md-4">
-                <input type="text" class="form-control" name="employees"
-                    ng-model="employees" />
-            </div>
+        <div class="form-group col-sm-3">
+            <label class=" control-label">Employee Code</label>
+                <input type="text" class="form-control" name="employeeCode"
+                    ng-model="employeeCode" />
         </div>
-        <div class="form-group">
-            <label class="col-md-2 control-label">Headoffice</label>
-            <div class="col-md-4">
-                <input type="text" class="form-control" name="headoffice"
-                    ng-model="headoffice" />
-            </div>
+        <div class="form-group col-sm-2">
+            <label class=" control-label">Department</label>
+            <select  ng-model="department" class="form-control" >
+              <option value="UI Devlopement" selected="UI Devlopement">UI Devlopement</option>
+              <option value="PHP Development" ng-model="department">PHP Development</option>
+              <option value="Geaphic" ng-model="department">Geaphic</option>
+              <option value="Mangment" ng-model="department">Mangment</option>
+            </select>
+
+            
         </div>
+        <div class="form-group col-sm-2">
+                <label class=" control-label">BirthDay</label>
+
+                <datepicker date-format="yyyy-MM-dd" selector="form-control">
+                        <div class="input-group">
+                            <input class="form-control" placeholder="your Birth day"  ng-model="birthDay" name="birthDay"/>
+                            <span class="input-group-addon" style="cursor: pointer">
+                            <i class="fa fa-lg fa-calendar"></i>
+                            </span>
+                        </div>
+                    </datepicker>
+            </div>
+
+         <div class="form-group col-sm-2">
+                <label class=" control-label">Gender</label> <br/>
+
+                <input type="radio" ng-model="gender" value="Male" name="gender"> Male
+                <input type="radio" ng-model="gender" value="Female" name="gender"> Female
+         </div>
+
+    </div>   
         <div class="form-group">								
             <div style="padding-left:110px">
                 <input type="submit" value="Submit" class="btn btn-primary"/>
@@ -29,19 +51,24 @@
 
     <table class="table">
             <tr>
-                <th>Name
+                <th>Employee Name
                 </th>
-                <th>Employees
+                <th>Employee Code
                 </th>
-                <th>Head Office
+                <th>Department
                 </th>
+                <th>Birth Day
+                    </th>
             </tr>
             <tr ng-repeat="company in companies">
-                <td>{{company.name}}
+                <td>{{company.employeeName}}
                 </td>
-                <td>{{company.employees}}
+                <td>{{company.employeeCode}}
                 </td>
-                <td>{{company.headoffice}}
+                <td>{{company.department}}
                 </td>
+                <td>{{company.birthDay}}
+                    </td> <td>{{company.gender}}
+                        </td>
             </tr>
         </table>
