@@ -10,11 +10,22 @@
   transition: all ease-in-out .5s;
 }
 
+.nav-pills > li > a {
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.nav-pills > li > a:hover {
+  border-left: 4px solid #333;
+}
+
 .myNav {
   border-bottom: 1px solid #ddd;
   height: 50px;
   padding: 7px;
   background-color: #fafafa;
+  width: 85%;
+  margin-left: 15%;
 }
 
 .myNav .profile {
@@ -24,21 +35,21 @@
 
 .fix {
   position: fixed;
-  top: 50px;
+  top: 0;
   width: 15%;
   height: 100%;
   border: 1px solid #ddd;
   background-color: #fafafa;
 }
 
+.logo {
+  height: 80px;
+}
+
 .veiw {
   margin-top: 75px;
   margin-left: 18%;
   width: 82%;
-}
-
-.form-control {
-  width: 90%;
 }
 
 .big {
@@ -61,9 +72,14 @@
   height: 400px;
 }
 
+.search {
+  margin-top: 30px;
+  width: 97%;
+  clear: both;
+}
+
 .table {
   border: 1px solid #ddd;
-  width: 98%;
 }
 
 .table tr:hover {
@@ -74,9 +90,12 @@
 footer {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
+  width: 15%;
   background-color: #333;
   color: #fff;
+}
+
+.inner-aside {
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */

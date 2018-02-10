@@ -23,16 +23,14 @@
     <nav class="myNav navbar navbar-fixed-top">
      <div class="container-fluid">
          <div class="row">
-        <div class="col-sm-4 brand">
-            <a href="#"><span class="" >l</span>ogo</a>
-        </div>
-            <div class="col-sm-4" ng-controller="datCtrl">
+                <div class="col-xs-4">
+            <div  ng-controller="datCtrl">
 
             <p> {{ today | date : " d MMM y"}}</p>          
-            
             </div>
-        <div class="profile col-sm-4">
-            <div class="dropdown">
+        </div>
+        <div class="profile  col-xs-8">
+            <div class="dropdow pull-right">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> <span class="caret"></span> Ahmed Mohamed Adel
                </button>
                <img class="img-circle img-thumbnail" width="42" height="42" src="http://via.placeholder.com/42x42" alt="" title="">
@@ -47,20 +45,29 @@
     </div>
 
  </nav>
-     <aside class="fix" ng-app="myApp">
+     <aside class="fix">
+         <div class="inner-aside">
             <ul class="nav nav-pills nav-stacked">
+                    <li ><a class="logo" href="#!main"><span class="" >l</span>ogo</a></li>
                     <li ><a href="#!main">Dashboard</a></li>
                     <li><a href="#!addEmployee">profile</a></li>
+                    <li><a href="#">linke</a></li>
+                    <li><a href="#">linke</a></li>
+                    <li><a href="#">linke</a></li>
+                    <li><a href="#">linke</a></li>
+                    <li><a href="#">linke</a></li>
+                    <li><a href="#">linke</a></li>
+
                 </ul>
 
+                <footer class="text-center" ng-controller="datCtrl">       <p> {{ today | date : "y"}}</p>   ©  Right copy          
+                </footer>
+            </div>
      </aside> 
         
         <div class="veiw" ng-view></div>
 
 
-<div class="clearfix"></div>
-<footer class="text-center" ng-controller="datCtrl">            <p> {{ today | date : "y"}}</p>          
-</footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>  

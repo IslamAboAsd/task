@@ -14,11 +14,22 @@ $border:1px solid #ddd;
     margin: 25px;
     transition: all ease-in-out .5s
 }
+
+
+.nav-pills>li>a {
+    color: #333;
+    border: 1px solid #ddd;}
+    
+    .nav-pills>li>a:hover{
+        border-left: 4px solid #333
+    }
 .myNav{
     border-bottom: $border;
     height: $navhieght;
     padding:7px;
     background-color: #fafafa;
+    width: 85%;
+    margin-left: 15%;
 
 
 .profile{
@@ -28,12 +39,15 @@ $border:1px solid #ddd;
 }
 .fix{
     position: fixed;
-    top: $navhieght;
+    top: 0;
     width: 15%;
     height: 100%;
     border:$border;
     background-color: #fafafa;
-
+   
+}
+.logo {
+    height: 80px
 }
 
 .veiw{
@@ -41,9 +55,7 @@ $border:1px solid #ddd;
     margin-left: 18%;
     width: 82%
 }
-.form-control{
-    width: 90%
-}
+
 %icon{
     padding: 0;
     cursor: pointer;
@@ -63,19 +75,25 @@ $border:1px solid #ddd;
     width: 82%;
     height: 400px
 }
+.search{
+    margin-top: 30px;
+    width: 97%;
+    clear: both
+}
 .table{
     border:$border;
-    width: 98%;
     tr:hover{
         background-color: #fafafa;
         color: #333
     }
 }
 footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+   position: fixed;
+   bottom: 0;
+   width: 15%;
     background-color: #333;
     color: #fff
+}
+.inner-aside{
+    position: relative
 }

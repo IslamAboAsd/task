@@ -1,16 +1,32 @@
+
+
 <form class="" role="form" ng-submit="addRow()">
-    <div class="row">
-    <div class="form-group col-sm-3">
+ <div class="container">
+  <div class="row">
+      <div class="col-sm-5">
+        <div class="form-group ">
             <label class="control-label">Employee Name</label>
                 <input type="text" class="form-control" name="name"
                     ng-model="employeeName" />
         </div>
-        <div class="form-group col-sm-3">
+        <div class="form-group ">
             <label class=" control-label">Employee Code</label>
                 <input type="text" class="form-control" name="employeeCode"
                     ng-model="employeeCode" />
         </div>
-        <div class="form-group col-sm-2">
+        <div class="form-group ">
+                <label class=" control-label">Gender</label> <br/>
+
+                <input type="radio" ng-model="gender" value="Male" name="gender"> Male
+                <input type="radio" ng-model="gender" value="Female" name="gender"> Female
+         </div>
+         <div class="form-group">								
+                <input type="submit" style="margin-top:20px" value="Submit" class="btn btn-primary"/>
+        </div> 
+    </div>
+    <div class="col-sm-4">
+
+        <div class="form-group ">
             <label class=" control-label">Department</label>
             <select  ng-model="department" class="form-control" >
               <option value="UI Devlopement" selected="UI Devlopement">UI Devlopement</option>
@@ -18,10 +34,10 @@
               <option value="Geaphic" ng-model="department">Geaphic</option>
               <option value="Mangment" ng-model="department">Mangment</option>
             </select>
-
-            
+     
         </div>
-        <div class="form-group col-sm-2">
+
+        <div class="form-group ">
                 <label class=" control-label">BirthDay</label>
 
                 <datepicker date-format="yyyy-MM-dd" selector="form-control">
@@ -34,22 +50,16 @@
                     </datepicker>
             </div>
 
-         <div class="form-group col-sm-2">
-                <label class=" control-label">Gender</label> <br/>
-
-                <input type="radio" ng-model="gender" value="Male" name="gender"> Male
-                <input type="radio" ng-model="gender" value="Female" name="gender"> Female
-         </div>
-
-    </div>   
-        <div class="form-group text-center">								
-            <div style="padding-left:110px">
-                <input type="submit" value="Submit" class="btn btn-primary"/>
-            </div>
+            
         </div>
     </form>
 
+    
+        <div class="col-xs-9">
+         <input class="form-control ng-pristine ng-valid" placeholder="Search" ng-model="searchKeyword" type="text">
+
     <table class="table">
+        <div class="container">
             <tr>
                 <th>Employee Name
                 </th>
@@ -61,7 +71,7 @@
                 </th><th>Gender
                 </th>
             </tr>
-            <tr ng-repeat="company in companies">
+            <tr ng-repeat="company in companies | filter: searchKeyword">
                 <td>{{company.employeeName}}
                 </td>
                 <td>{{company.employeeCode}}
@@ -72,4 +82,7 @@
                     </td> <td>{{company.gender}}
                         </td>
             </tr>
+        </div>
         </table>
+    </div>
+      
