@@ -1,3 +1,8 @@
+* {
+  font-family: 'Harmattan', sans-serif;
+  font-size: 20px;
+}
+
 .row {
   margin-bottom: 15px;
 }
@@ -97,5 +102,9 @@ footer {
 
 .inner-aside {
   position: relative;
+}
+
+.dropdown-menu {
+  right: 47px !important;
 }
 /*# sourceMappingURL=style.css.map */
