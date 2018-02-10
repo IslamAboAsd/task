@@ -11,7 +11,7 @@ $navhieght:50px;
     float: left;
     width: 33.33333%;
     margin: 25px;
-    transition: all ease-in-out 2s
+    transition: all ease-in-out .5s
 }
 .myNav{
     border-bottom: 1px solid #ddd;
@@ -37,10 +37,30 @@ $navhieght:50px;
 
 .veiw{
     margin-top: $navhieght + 25;
-    margin-left: 18%
+    margin-left: 18%;
+    width: 82%
 }
 .form-control{
     width: 90%
+}
+%icon{
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    float: right;
+    line-height: 1;
+}
+.big{
+    @extend %icon;
+    margin-right: 4px;
+    color: #cbcbcb;
+    
+}
+.bigger{
+    width: 82%;
+    height: 100%
 }
 footer{
     position: fixed;

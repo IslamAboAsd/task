@@ -3,7 +3,6 @@ app.config(function($routeProvider) {
     $routeProvider
     .when("/main", {
         templateUrl : "partail/main.html",
-        controller : "mainCtrl"
 
     })
     .when("/addEmployee", {

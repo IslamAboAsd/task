@@ -1,6 +1,5 @@
 var personController=angular.module("personController", ["ngRoute","720kb.datepicker", "personController"]);
 
-
 personController.controller('datCtrl', function($scope) {
     $scope.today = new Date();
 });
