@@ -1,10 +1,12 @@
 * {
   font-family: 'Harmattan', sans-serif;
   font-size: 20px;
+  transition: all ease-in-out .5s;
 }
 
 body {
   background-color: #1c1c15;
+  overflow-x: hidden;
 }
 
 .row {
@@ -77,20 +79,37 @@ button:focus {
   background-color: #443922 !important;
 }
 
+.add-width-nav {
+  left: 0 !important;
+  width: 100%;
+}
+
 .myNav {
   background-color: #10100f;
   color: #bfaa81;
   border-bottom: 1px solid #bfaa81;
   height: 50px;
   padding: 7px;
-  width: 85%;
-  margin-left: 15%;
+  width: -80%;
+  left: 180px;
+  transition: all ease-in-out .5s;
 }
 
 .myNav .dropdown-menu {
   background-color: #bfaa81;
   color: #443922;
-  right: 47px !important;
+  right: 150px !important;
+}
+
+.myNav .dropdown-menu > li > a:focus, .myNav .dropdown-menu > li > a:hover {
+  background-color: #443922;
+  color: #bfaa81;
+}
+
+.myNav .cus .fa:hover {
+  color: rgba(160, 155, 80, 0.486);
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .btn {
@@ -99,18 +118,19 @@ button:focus {
 }
 
 .profile {
-  float: right;
   color: #bfaa81;
+  padding-right: 10%;
 }
 
-.fix {
+aside.fix {
   background-color: #10100f;
   color: #bfaa81;
   position: fixed;
   top: 0;
-  width: 15%;
+  width: 180px;
   height: 100%;
   border: 1px solid #bfaa81;
+  transition: all ease-in-out .5s;
 }
 
 .logo {
@@ -119,8 +139,9 @@ button:focus {
 
 .veiw {
   margin-top: 75px;
-  width: 82%;
+  width: -140%;
   float: right;
+  transition: all ease-in-out .5s;
 }
 
 .big {
@@ -139,8 +160,8 @@ button:focus {
 }
 
 .bigger {
-  width: 82%;
-  height: 400px;
+  width: 90%;
+  height: 600px;
 }
 
 .search {
@@ -159,11 +180,17 @@ button:focus {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 15%;
   background-color: #10100f;
-  color: #fff;
+  color: #bfaa81;
+  margin-top: 50px;
+}
+
+.add-width {
+  margin-right: 180px;
+}
+
+.hidden-aside {
+  margin-left: -240px;
 }
 
 .inner-aside {
@@ -186,5 +213,38 @@ footer {
 .input-group-addon {
   background-color: #443922;
   color: #bfaa81;
+}
+
+._720kb-datepicker-calendar {
+  background-color: #443922;
+  color: #bfaa81;
+}
+
+._720kb-datepicker-calendar-month {
+  color: #bfaa81;
+}
+
+._720kb-datepicker-calendar-month span {
+  color: #bfaa81;
+}
+
+._720kb-datepicker-calendar-days-header div {
+  color: #bfaa81;
+}
+
+._720kb-datepicker-calendar-day._720kb-datepicker-disabled, ._720kb-datepicker-calendar-day._720kb-datepicker-disabled:hover, ._720kb-datepicker-calendar-years-pagination a._720kb-datepicker-disabled, ._720kb-datepicker-calendar-years-pagination a._720kb-datepicker-disabled:hover, ._720kb-datepicker-calendar-years-pagination a._720kb-datepicker-active._720kb-datepicker-disabled, ._720kb-datepicker-calendar-years-pagination a._720kb-datepicker-active._720kb-datepicker-disabled:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+._720kb-datepicker-calendar-days-header {
+  background-color: #3b311d;
+}
+
+._720kb-datepicker-calendar-header:nth-child(odd) {
+  background-color: #2d2516;
+}
+
+._720kb-datepicker-calendar-header:nth-child(even) {
+  background-color: #443922;
 }
 /*# sourceMappingURL=style.css.map */

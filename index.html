@@ -20,31 +20,7 @@
 
 
     <body ng-app="app">
-    <nav class="myNav navbar navbar-fixed-top">
-     <div class="container-fluid">
-         <div class="row">
-                <div class="col-xs-4">
-            <div  ng-controller="datCtrl">
-
-            <p> {{ today | date : " d MMM y"}}</p>          
-            </div>
-        </div>
-        <div class="profile  col-xs-8">
-            <div class="dropdow pull-right">
-                <button class="btn " type="button" data-toggle="dropdown"> <span class="caret"></span> Ahmed Mohamed Adel
-               </button>
-               <img class="img-circle img-thumbnail" width="42" height="42" src="http://via.placeholder.com/42x42" alt="" title="">
-
-               <ul class="dropdown-menu">
-                  <li><a href="#">profile</a></li>
-                  <li><a href="#">Log out</a></li>
-                </ul>
-              </div>
-        </div>
-     </div>
-    </div>
-
- </nav>
+    
      <aside class="fix">
          <div class="inner-aside">
             <ul class="nav nav-pills nav-stacked">
@@ -63,11 +39,44 @@
                 <footer class="text-center" ng-controller="datCtrl">       <p> {{ today | date : "y"}}</p>   ©  Right copy          
                 </footer>
             </div>
-     </aside> 
-        
-        <div class="veiw" ng-view></div>
+     </aside>
+     
+     
+        <div class="veiw">
+            <nav class="myNav navbar navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="row">
+           
+                           <div class="cus col-md-1">
+                                   <i class="fa fa-bars" aria-hidden="true"></i>
+               
+                               </div>
+                           <div class="col-xs-4">
+                       <div  ng-controller="datCtrl">
+            
+                       <p> {{ today | date : " d MMM y"}}</p>          
+                       </div>
+                   </div>
+           
+                   <div class="profile  col-xs-6">
+                       <div class="dropdow pull-right">
+                           <button class="btn " type="button" data-toggle="dropdown"> <span class="caret"></span> Ahmed Mohamed Adel
+                          </button>
+                          <img class="img-circle" width="35" height="35" src="http://via.placeholder.com/42x42" alt="" title="">
+           
+                          <ul class="dropdown-menu">
+                             <li><a href="#">profile</a></li>
+                             <li><a href="#">Log out</a></li>
+                           </ul>
+                         </div>
+                   </div>
+                </div>
+               </div>
+           
+            </nav>
+        <div  ng-view></div>
 
-
+</div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>  
