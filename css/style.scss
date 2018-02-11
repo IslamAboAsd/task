@@ -18,9 +18,7 @@ body{
     background-color: $bgColorBody;
     overflow-x: hidden
 }
-.row{
-    margin-bottom: 15px;
-}
+
 button:focus{
     outline: none!important
 }
@@ -256,7 +254,8 @@ datepicker select, datepicker select:focus, datepicker select:hover, .datepicker
         width: 100%
     }
     .modal-content{
-        margin: 0
+        margin: 15px 0 15px ;
+        
     }
     .myNav{
         left: 0
@@ -275,13 +274,19 @@ datepicker select, datepicker select:focus, datepicker select:hover, .datepicker
         width: 100%;
     }
     .profile{
-        padding: 0
+        padding: 0;
+        float: right
     }
     .addEmployee{
         padding-left: 0
     }
-    .table tr th {
+    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
         width:5%;
-        padding: 3px
+        padding: 3px;
+        font-size: 14px
+    }
+    .myNav .dropdown-menu{
+        right: 49px !important;
+ 
     }
 }
