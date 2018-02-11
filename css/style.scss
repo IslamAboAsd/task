@@ -1,12 +1,17 @@
 
 $right:right;
 $left:left;
-$maincolor:#DDD;
+$mainBgColor:#10100f;
+$maincolor:#bfaa81;
+$scondColor:#443922;
 $navhieght:50px;
-$border:1px solid #ddd;
+$border:1px solid #bfaa81;
 *{
     font-family: 'Harmattan', sans-serif;
     font-size: 20px
+}
+body{
+    background-color: #1c1c15
 }
 .row{
     margin-bottom: 15px;
@@ -14,40 +19,56 @@ $border:1px solid #ddd;
 .modal-content{
     box-shadow: none;
     float: left;
-    width: 33.33333%;
+    width: 100%;
     margin: 25px;
     transition: all ease-in-out .5s
 }
 
 
 .nav-pills>li>a {
-    color: #333;
-    border: 1px solid #ddd;}
+    color: $maincolor;
+    border: 1px solid $maincolor;}
     
     .nav-pills>li>a:hover{
-        border-left: 4px solid #333
+        border-left: 4px solid $maincolor;
+        background-color: $scondColor
     }
 .myNav{
+    background-color: $mainBgColor;
+    color: $maincolor;
     border-bottom: $border;
     height: $navhieght;
     padding:7px;
-    background-color: #fafafa;
     width: 85%;
     margin-left: 15%;
+    .dropdown-menu{
+        background-color: $maincolor
+    }
+}
+.btn{
+   border: 2px solid #BEA780;
+   background-color: transparent
 
+}
+
+    .dropdown-menu{
+        right: 47px!important;
+    
+    }
 
 .profile{
     float: $right;
     color: $maincolor
 }
-}
+
 .fix{
+    background-color: $mainBgColor;
+    color: $maincolor;
     position: fixed;
     top: 0;
     width: 15%;
     height: 100%;
     border:$border;
-    background-color: #fafafa;
    
 }
 .logo {
@@ -56,8 +77,8 @@ $border:1px solid #ddd;
 
 .veiw{
     margin-top: $navhieght + 25;
-    margin-left: 18%;
-    width: 82%
+    width: 89%;
+    float: right;
 }
 
 %icon{
@@ -87,21 +108,31 @@ $border:1px solid #ddd;
 .table{
     border:$border;
     tr:hover{
-        background-color: #fafafa;
-        color: #333
+        background-color: $scondColor;
+        color: $maincolor
     }
 }
 footer{
    position: fixed;
    bottom: 0;
    width: 15%;
-    background-color: #333;
+    background-color: $mainBgColor;
     color: #fff
 }
 .inner-aside{
     position: relative
 }
-.dropdown-menu{
-    right: 47px!important;
-
+.addEmployee{
+    padding-left: 6%;
+    color: $maincolor
+}
+.form-control{
+    background-color: $mainBgColor
+}
+.form-control:focus{
+    border-color: $maincolor
+}
+.input-group-addon{
+    background-color: $scondColor;
+    color: $maincolor
 }

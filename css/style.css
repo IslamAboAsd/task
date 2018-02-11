@@ -3,6 +3,10 @@
   font-size: 20px;
 }
 
+body {
+  background-color: #1c1c15;
+}
+
 .row {
   margin-bottom: 15px;
 }
@@ -10,41 +14,57 @@
 .modal-content {
   box-shadow: none;
   float: left;
-  width: 33.33333%;
+  width: 100%;
   margin: 25px;
   transition: all ease-in-out .5s;
 }
 
 .nav-pills > li > a {
-  color: #333;
-  border: 1px solid #ddd;
+  color: #bfaa81;
+  border: 1px solid #bfaa81;
 }
 
 .nav-pills > li > a:hover {
-  border-left: 4px solid #333;
+  border-left: 4px solid #bfaa81;
+  background-color: #443922;
 }
 
 .myNav {
-  border-bottom: 1px solid #ddd;
+  background-color: #10100f;
+  color: #bfaa81;
+  border-bottom: 1px solid #bfaa81;
   height: 50px;
   padding: 7px;
-  background-color: #fafafa;
   width: 85%;
   margin-left: 15%;
 }
 
-.myNav .profile {
+.myNav .dropdown-menu {
+  background-color: #bfaa81;
+}
+
+.btn {
+  border: 2px solid #BEA780;
+  background-color: transparent;
+}
+
+.dropdown-menu {
+  right: 47px !important;
+}
+
+.profile {
   float: right;
-  color: #DDD;
+  color: #bfaa81;
 }
 
 .fix {
+  background-color: #10100f;
+  color: #bfaa81;
   position: fixed;
   top: 0;
   width: 15%;
   height: 100%;
-  border: 1px solid #ddd;
-  background-color: #fafafa;
+  border: 1px solid #bfaa81;
 }
 
 .logo {
@@ -53,8 +73,8 @@
 
 .veiw {
   margin-top: 75px;
-  margin-left: 18%;
-  width: 82%;
+  width: 89%;
+  float: right;
 }
 
 .big {
@@ -84,19 +104,19 @@
 }
 
 .table {
-  border: 1px solid #ddd;
+  border: 1px solid #bfaa81;
 }
 
 .table tr:hover {
-  background-color: #fafafa;
-  color: #333;
+  background-color: #443922;
+  color: #bfaa81;
 }
 
 footer {
   position: fixed;
   bottom: 0;
   width: 15%;
-  background-color: #333;
+  background-color: #10100f;
   color: #fff;
 }
 
@@ -104,7 +124,21 @@ footer {
   position: relative;
 }
 
-.dropdown-menu {
-  right: 47px !important;
+.addEmployee {
+  padding-left: 6%;
+  color: #bfaa81;
+}
+
+.form-control {
+  background-color: #10100f;
+}
+
+.form-control:focus {
+  border-color: #bfaa81;
+}
+
+.input-group-addon {
+  background-color: #443922;
+  color: #bfaa81;
 }
 /*# sourceMappingURL=style.css.map */
