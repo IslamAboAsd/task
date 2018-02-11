@@ -1,9 +1,10 @@
 
 $right:right;
 $left:left;
-$mainBgColor:#10100f;
+$mainBgColor:rgb(16, 16, 15);
 $maincolor:#bfaa81;
 $scondColor:#443922;
+$bgColorBody:#1c1c15;
 $navhieght:50px;
 $border:1px solid #bfaa81;
 *{
@@ -11,17 +12,52 @@ $border:1px solid #bfaa81;
     font-size: 20px
 }
 body{
-    background-color: #1c1c15
+    background-color: $bgColorBody
 }
 .row{
     margin-bottom: 15px;
+}
+button:focus{
+    outline: none!important
 }
 .modal-content{
     box-shadow: none;
     float: left;
     width: 100%;
     margin: 25px;
-    transition: all ease-in-out .5s
+    transition: all ease-in-out .5s;
+    border: 1px solid #6d6142;
+
+.modal-header{
+    border-color: $scondColor;
+    background-color: $mainBgColor;
+    color: $maincolor;
+    padding: 7px;
+    
+    .fa, .far, .fas{
+        color: $maincolor;
+        opacity: .2;
+        display: inline-block;
+        margin-right: 5px
+    }
+    .fa:hover, .far:hover, .fas:hover{
+        opacity: 1;
+    }
+    .clos .fa{
+        font-size: 21px
+    }
+}
+.modal-body{
+    background-color: $bgColorBody;
+    color: $maincolor;
+    border: $border
+}
+.modal-footer{
+
+    background-color: $mainBgColor;
+    border-top-color: $scondColor
+}
+
 }
 
 .btn.focus, .btn:focus, .btn:hover{

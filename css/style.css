@@ -11,12 +11,50 @@ body {
   margin-bottom: 15px;
 }
 
+button:focus {
+  outline: none !important;
+}
+
 .modal-content {
   box-shadow: none;
   float: left;
   width: 100%;
   margin: 25px;
   transition: all ease-in-out .5s;
+  border: 1px solid #6d6142;
+}
+
+.modal-content .modal-header {
+  border-color: #443922;
+  background-color: #10100f;
+  color: #bfaa81;
+  padding: 7px;
+}
+
+.modal-content .modal-header .fa, .modal-content .modal-header .far, .modal-content .modal-header .fas {
+  color: #bfaa81;
+  opacity: .2;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.modal-content .modal-header .fa:hover, .modal-content .modal-header .far:hover, .modal-content .modal-header .fas:hover {
+  opacity: 1;
+}
+
+.modal-content .modal-header .clos .fa {
+  font-size: 21px;
+}
+
+.modal-content .modal-body {
+  background-color: #1c1c15;
+  color: #bfaa81;
+  border: 1px solid #bfaa81;
+}
+
+.modal-content .modal-footer {
+  background-color: #10100f;
+  border-top-color: #443922;
 }
 
 .btn.focus, .btn:focus, .btn:hover {
