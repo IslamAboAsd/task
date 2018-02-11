@@ -1,6 +1,9 @@
 
 <div class="addEmployee">
-    <h2>Add Employee</h2>
+    <h2 class="text-center">Add Employee</h2>
+    <hr>
+
+    
 <form class="" role="form" ng-submit="addRow()">
  <div class="container">
   <div class="row">
@@ -10,60 +13,74 @@
                 <input type="text" class="form-control" name="name"
                     ng-model="employeeName" />
         </div>
+       
         <div class="form-group ">
             <label class=" control-label">Employee Code</label>
                 <input type="text" class="form-control" name="employeeCode"
                     ng-model="employeeCode" />
         </div>
-        <div class="form-group ">
-                <label class=" control-label">Gender</label> <br/>
-
-                <input type="radio" ng-model="gender" value="Male" name="gender"> Male
-                <input type="radio" ng-model="gender" value="Female" name="gender"> Female
-         </div>
-         <div class="form-group">								
-                <input type="submit" style="margin-top:20px" value="Add Employee" class="btn"/>
-        </div> 
     </div>
-    <div class="col-sm-4">
+        <div class="col-sm-4">
 
-        <div class="form-group ">
-            <label class=" control-label">Department</label>
-            <select  ng-model="department" class="form-control" >
-              <option value="UI Devlopement" selected="UI Devlopement">UI Devlopement</option>
-              <option value="PHP Development" ng-model="department">PHP Development</option>
-              <option value="Geaphic" ng-model="department">Geaphic</option>
-              <option value="Mangment" ng-model="department">Mangment</option>
-            </select>
-     
-        </div>
-
-        <div class="form-group ">
-                <label class=" control-label">BirthDay</label>
-
-                <datepicker date-format="yyyy-MM-dd" selector="form-control">
-                        <div class="input-group">
-                            <input class="form-control" placeholder="your Birth day"  ng-model="birthDay" name="birthDay"/>
-                            <span class="input-group-addon" style="cursor: pointer">
-                            <i class="fa fa-lg fa-calendar"></i>
-                            </span>
-                        </div>
-                    </datepicker>
+            <div class="form-group ">
+                <label class=" control-label">Department</label>
+                <select  ng-model="department" class="form-control" >
+                  <option value="UI Devlopement" selected="UI Devlopement">UI Devlopement</option>
+                  <option value="PHP Development" ng-model="department">PHP Development</option>
+                  <option value="Geaphic" ng-model="department">Geaphic</option>
+                  <option value="Mangment" ng-model="department">Mangment</option>
+                </select>
+         
             </div>
+    
+            <div class="form-group ">
+                    <label class=" control-label">BirthDay</label>
+    
+                    <datepicker date-format="yyyy-MM-dd" selector="form-control">
+                            <div class="input-group">
+                                <input class="form-control" placeholder="your Birth day"  ng-model="birthDay" name="birthDay"/>
+                                <span class="input-group-addon" style="cursor: pointer">
+                                <i class="fa fa-lg fa-calendar"></i>
+                                </span>
+                            </div>
+                        </datepicker>
+                </div>
+    
+                
+            </div>
+    <div class="col-xs-12 pull-right" style="margin-top:15px">
+            <div class="form-group ">
+                    <label class=" control-label">Gender</label> <br/>
 
-            
+                    <input type="radio" ng-model="gender" value="Male" name="gender"> Male
+                    <input type="radio" ng-model="gender" value="Female" name="gender"> Female
+            </div>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="form-group">								
+            <input type="submit" style="margin-top:25px" value="Add Employee" class="btn"/>
+            </div> 
         </div>
+
+
+          </div>
+      </div>
     </form>
 
     
-        <div class="col-xs-9">
-                <div class="input-group">
+  
 
-         <input class="form-control ng-pristine ng-valid" placeholder="Search" ng-model="searchKeyword" type="text">
-         <span class="input-group-addon" style="cursor: pointer">
-                <i class="fa fa-lg fa-search"></i>
-                </span>
-                </div>
+  <div class="parnet-table">
+
+
+    <div class="input-group">
+            <input class="form-control ng-pristine ng-valid" placeholder="Search" ng-model="searchKeyword" type="text">
+            <span class="input-group-addon" style="cursor: pointer">
+                    <i class="fa fa-lg fa-search"></i>
+                    </span>
+        </div>
+
     <table class="table">
         <div class="container">
             <tr>
@@ -91,5 +108,6 @@
             </tr>
         </div>
         </table>
+    </div>
     </div>
 </div>

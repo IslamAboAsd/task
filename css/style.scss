@@ -178,6 +178,10 @@ aside{
     width: 97%;
     clear: both
 }
+.parnet-table{
+    padding-right: 2%;
+    padding-left: 2%
+}
 .table{
     border:$border;
     tr:hover{
@@ -201,7 +205,6 @@ footer{
     position: relative
 }
 .addEmployee{
-    padding-left: 6%;
     color: $maincolor
 }
 .form-control{
@@ -240,6 +243,12 @@ footer{
 ._720kb-datepicker-calendar-header:nth-child(even){
     background-color: #443922
 }
+datepicker select, datepicker select:focus, datepicker select:hover, .datepicker select, .datepicker select:focus, .datepicker select:hover, [datepicker] select, [datepicker] select:focus, [datepicker] select:hover{
+    background-color: $scondColor
+}
+
+
+
 /* Media Query */
 
 @media only screen and (max-width: 500px) {
@@ -264,5 +273,11 @@ footer{
     .add-width-nav{
         left: 180px!important;
         width: 100%;
+    }
+    .profile{
+        padding: 0
+    }
+    .addEmployee{
+        padding-left: 0
     }
 }
