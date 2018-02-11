@@ -77,8 +77,9 @@
                 </th><th>Gender
                 </th>
             </tr>
-            <tr ng-repeat="company in companies | filter: searchKeyword">
-                <td>{{company.employeeName}}
+            <tr ng-repeat="company in companies | filter: searchKeyword" 
+             ng-if="company.employeeName && company.employeeCode && company.department && company.birthDay && company.gender !== '' " >
+                <td >{{company.employeeName}}
                 </td>
                 <td>{{company.employeeCode}}
                 </td>
