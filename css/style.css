@@ -82,6 +82,7 @@ button:focus {
 .add-width-nav {
   left: 0 !important;
   width: 100%;
+  left: 0;
 }
 
 .myNav {
@@ -90,7 +91,7 @@ button:focus {
   border-bottom: 1px solid #bfaa81;
   height: 50px;
   padding: 7px;
-  width: -80%;
+  width: calc(100%-180px);
   left: 180px;
   transition: all ease-in-out .5s;
 }
@@ -122,11 +123,17 @@ button:focus {
   padding-right: 10%;
 }
 
-aside.fix {
+aside {
+  width: 180px;
+  display: inline-block;
+}
+
+.fix {
   background-color: #10100f;
   color: #bfaa81;
   position: fixed;
   top: 0;
+  bottom: 0;
   width: 180px;
   height: 100%;
   border: 1px solid #bfaa81;
@@ -139,7 +146,7 @@ aside.fix {
 
 .veiw {
   margin-top: 75px;
-  width: -140%;
+  width: calc(100% - 240px);
   float: right;
   transition: all ease-in-out .5s;
 }
@@ -246,5 +253,31 @@ footer {
 
 ._720kb-datepicker-calendar-header:nth-child(even) {
   background-color: #443922;
+}
+
+/* Media Query */
+@media only screen and (max-width: 500px) {
+  .veiw {
+    width: 100%;
+  }
+  .modal-content {
+    margin: 0;
+  }
+  .myNav {
+    left: 0;
+  }
+  .fix {
+    margin-left: -240px;
+  }
+  .hidden-aside {
+    margin-left: 0;
+  }
+  .add-width {
+    margin-right: -180px;
+  }
+  .add-width-nav {
+    left: 180px !important;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

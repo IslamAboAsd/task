@@ -8,7 +8,7 @@ jQuery(document).ready(function(){
    
     $('.cus').click(function () {
 
-        $('aside').toggleClass('hidden-aside');
+        $('aside').toggleClass('hidden-aside ');
         $('.veiw').toggleClass('add-width');
         $('.myNav').toggleClass('add-width-nav');
 
