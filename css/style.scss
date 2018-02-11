@@ -24,14 +24,19 @@ body{
     transition: all ease-in-out .5s
 }
 
+.btn.focus, .btn:focus, .btn:hover{
+    color: $maincolor;
+    background-color: $scondColor;
+    outline:none;
 
+}
 .nav-pills>li>a {
     color: $maincolor;
     border: 1px solid $maincolor;}
     
-    .nav-pills>li>a:hover{
+    .nav-pills>li>a:hover, .nav-pills>li>a:hover, .nav>li>a:focus, .nav>li>a:hover{
         border-left: 4px solid $maincolor;
-        background-color: $scondColor
+        background-color: $scondColor!important
     }
 .myNav{
     background-color: $mainBgColor;
@@ -42,7 +47,11 @@ body{
     width: 85%;
     margin-left: 15%;
     .dropdown-menu{
-        background-color: $maincolor
+        background-color: $maincolor;
+        color: $scondColor;
+        right: 47px!important;
+
+
     }
 }
 .btn{
@@ -51,11 +60,7 @@ body{
 
 }
 
-    .dropdown-menu{
-        right: 47px!important;
     
-    }
-
 .profile{
     float: $right;
     color: $maincolor

@@ -22,7 +22,7 @@
                 <input type="radio" ng-model="gender" value="Female" name="gender"> Female
          </div>
          <div class="form-group">								
-                <input type="submit" style="margin-top:20px" value="Add Employee" class="btn btn-primary"/>
+                <input type="submit" style="margin-top:20px" value="Add Employee" class="btn"/>
         </div> 
     </div>
     <div class="col-sm-4">
@@ -57,8 +57,13 @@
 
     
         <div class="col-xs-9">
-         <input class="form-control ng-pristine ng-valid" placeholder="Search" ng-model="searchKeyword" type="text">
+                <div class="input-group">
 
+         <input class="form-control ng-pristine ng-valid" placeholder="Search" ng-model="searchKeyword" type="text">
+         <span class="input-group-addon" style="cursor: pointer">
+                <i class="fa fa-lg fa-search"></i>
+                </span>
+                </div>
     <table class="table">
         <div class="container">
             <tr>

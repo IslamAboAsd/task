@@ -19,14 +19,20 @@ body {
   transition: all ease-in-out .5s;
 }
 
+.btn.focus, .btn:focus, .btn:hover {
+  color: #bfaa81;
+  background-color: #443922;
+  outline: none;
+}
+
 .nav-pills > li > a {
   color: #bfaa81;
   border: 1px solid #bfaa81;
 }
 
-.nav-pills > li > a:hover {
+.nav-pills > li > a:hover, .nav-pills > li > a:hover, .nav > li > a:focus, .nav > li > a:hover {
   border-left: 4px solid #bfaa81;
-  background-color: #443922;
+  background-color: #443922 !important;
 }
 
 .myNav {
@@ -41,15 +47,13 @@ body {
 
 .myNav .dropdown-menu {
   background-color: #bfaa81;
+  color: #443922;
+  right: 47px !important;
 }
 
 .btn {
   border: 2px solid #BEA780;
   background-color: transparent;
-}
-
-.dropdown-menu {
-  right: 47px !important;
 }
 
 .profile {
