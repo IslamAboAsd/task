@@ -30,6 +30,10 @@ body {
   border: 1px solid #bfaa81;
 }
 
+.nav > li > a > img {
+  max-width: 100%;
+}
+
 .nav-pills > li > a:hover, .nav-pills > li > a:hover, .nav > li > a:focus, .nav > li > a:hover {
   border-left: 4px solid #bfaa81;
   background-color: #443922 !important;

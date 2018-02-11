@@ -33,9 +33,11 @@ body{
 .nav-pills>li>a {
     color: $maincolor;
     border: 1px solid $maincolor;}
-    
-    .nav-pills>li>a:hover, .nav-pills>li>a:hover, .nav>li>a:focus, .nav>li>a:hover{
-        border-left: 4px solid $maincolor;
+.nav>li>a>img{
+    max-width: 100%
+}
+.nav-pills>li>a:hover, .nav-pills>li>a:hover, .nav>li>a:focus, .nav>li>a:hover{
+    border-left: 4px solid $maincolor;
         background-color: $scondColor!important
     }
 .myNav{
